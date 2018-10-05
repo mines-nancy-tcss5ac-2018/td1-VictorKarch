@@ -20,7 +20,6 @@ def solve(n): #On écrit la fonction qui calcule le score total d'une liste de n
     return Score_total
 #---------------------------------------------------------------------------------------------------
 
-
 f = open('p022_names.txt', 'r') #on ouvre le fichier et on créée la liste de noms
 g=f.read()
 names=g.split(',')  #on sépare les noms au niveau des virgules
