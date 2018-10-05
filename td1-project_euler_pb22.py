@@ -27,7 +27,6 @@ names=g.split(',')  #on sépare les noms au niveau des virgules
 names=sorted(names) #on trie la liste par ordre alphabétique
 
 #----------------------------------------------------------------------------------------------------
-
 assert names.index('"COLIN"')+1 == 938 #On vérifie que la liste est correctement triée pour le nom COLIN
 #------------------------------------------------------------------------------------------------------
 print(solve(names))
