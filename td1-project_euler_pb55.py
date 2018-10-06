@@ -1,14 +1,13 @@
 #Problem55
 
-
 def reverse(N):  #Fonction qui nous permet de renverser un nombre
     M=0
     while N>0:
-        M=M*10+N%10 #A chaque itération on ajoute le dernier chiffre de N et la multiplication de M par 10 "décale" les termes vers la gauche
+        M=M*10+N%10 #A chaque itÃ©ration on ajoute le dernier chiffre de N et la multiplication de M par 10 "dÃ©cale" les termes vers la gauche
         N=N//10
     return M
 #---------------------------------------------------------------------------------------
-def palindrome(N):  #Fonction qui vérifie si N est un palindrome
+def palindrome(N):  #Fonction qui vÃ©rifie si N est un palindrome
     return N==reverse(N)
 #-------------------------------------------------------------------------------------
 
@@ -16,7 +15,7 @@ assert palindrome(3773) and palindrome(1234321) and not palindrome(1234)  #on te
 
 #---------------------------------------------------------------------------------------
 
-def Lychrel(N): #Fonction qui indique si un nombre est un nombre de Lychrel d'après les conditions de l'énoncé
+def Lychrel(N): #Fonction qui indique si un nombre est un nombre de Lychrel d'aprÃ¨s les conditions de l'Ã©noncÃ©
     j=0
     P=N
     while j<50 and not palindrome(P):
@@ -25,7 +24,7 @@ def Lychrel(N): #Fonction qui indique si un nombre est un nombre de Lychrel d'ap
     return j>=50
 
 #--------------------------------------------------------------------------------------
-assert Lychrel(196) and Lychrel(10677) and not Lychrel(47) and not Lychrel(349) #On teste la fonction avec les nombres de l'énoncé
+assert Lychrel(196) and Lychrel(10677) and not Lychrel(47) and not Lychrel(349) #On teste la fonction avec les nombres de l'Ã©noncÃ©
 #--------------------------------------------------------------------------------------
 
 def solve(n): #Fonction finale
